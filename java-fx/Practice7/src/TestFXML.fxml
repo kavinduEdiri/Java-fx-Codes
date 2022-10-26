@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Button fx:id="bu1" layoutX="25.0" layoutY="26.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="138.0" text="Button1" />
+      <Button fx:id="bu2" layoutX="183.0" layoutY="28.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="145.0" text="Button2" />
+      <Button fx:id="bu3" layoutX="348.0" layoutY="29.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="34.0" text="Button3" />
+      <Label layoutX="56.0" layoutY="138.0" prefHeight="17.0" prefWidth="269.0" text="select" />
+      <RadioButton fx:id="rad1" layoutX="25.0" layoutY="173.0" mnemonicParsing="false" text="RadioButton" />
+      <CheckBox fx:id="check1" layoutX="127.0" layoutY="173.0" mnemonicParsing="false" text="CheckBox1" />
+      <CheckBox fx:id="check2" layoutX="219.0" layoutY="173.0" mnemonicParsing="false" text="CheckBox2" />
+      <CheckBox fx:id="check3" layoutX="300.0" layoutY="173.0" mnemonicParsing="false" text="CheckBox3" />
+      <Button fx:id="submit" layoutX="156.0" layoutY="134.0" mnemonicParsing="false" onAction="#SubmitOnAction" text="Submit" />
+      <Button fx:id="click" layoutX="14.0" layoutY="200.0" mnemonicParsing="false" onAction="#ClickOnAction" prefHeight="25.0" prefWidth="358.0" text="Click" />
+      <ImageView fitHeight="392.0" fitWidth="200.0" layoutX="406.0" layoutY="3.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@photo.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="398.0" layoutY="90.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+      <TabPane layoutX="48.0" layoutY="259.0" prefHeight="131.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Customer" />
+          <Tab text="Data" />
+            <Tab text="Info" />
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
